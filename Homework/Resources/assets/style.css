@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+    padding: 0;
+    background-color: #eeeeee;
+    height: 100%;
+}
+
+
+/* Giving our navbar some padding and a background color */
+
+.navbar-header {
+    background-color: #08b59ce3;
+}
+
+.header {
+    color: #08b59ce3;
+    margin: 20px;
+    border-bottom: 1px solid #08b59ce3;
+    padding-bottom: 30px;
+}
+
+p {
+    padding-left: 15px;
+}
+
+.card-column {
+    padding: 20px;
+}
+
+.main-content {
+    margin: 20px;
+    height: 100%;
+}
+
+.main-content .card {
+    background-color: white;
+    height: calc(90vh - 200px);
+}
+
+.main-content .datacard {
+    background-color: white;
+    margin: 20px;
+}
+
+.main-content .card-body {
+    padding-left: 10px;
+}
+
+.img-list.active {
+    border: 2px solid #08b59ce3;
+}
+
+.detail-image {
+    height: 350px;
+    width: fit-content;
+}
+
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+
+@media (max-width: 768px) {
+    .navbar {
+        border-radius: 0px;
+        background-color: white;
+    }
+    .container-fluid>.navbar-header {
+        margin-left: 50px;
+        background-color: white;
+    }
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+        color: #eeeeee;
+        background-color: white;
+        font-weight: 600;
+    }
+}

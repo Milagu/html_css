@@ -1,0 +1,116 @@
+<!Doctype html>
+<html lang="en-us">
+<title>Bootstrap Visualization Dashboard</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A project to showcase Data Analytics work using CSS-based design.">
+    <!-- FIRST jquery added for dropdown-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">  </script>
+    <!-- THEN bootstrap added for dropdown -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Resources/assets/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Logo and name of the project-->
+                    <a class="navbar-brand" href="../assets/index.html">Lattitude</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../assets/temperature.html">Max Temperature</li>
+                                <li><a href="../assets/humidity.html">Humidity</li>
+                                <li><a href="../assets/cloudiness.html">Cloudiness</li>
+                                <li><a href="../assets/windspeed.html">Windspeed</li>
+                                <li><a href="../assets/comparisons.html">Comparisons</li>
+                                <li><a href="../assets/data.html">Data</li>
+                            </ul>
+                        </li>
+                        <li><a href="../assets/comparisons.html">Comparisons</a></li>
+                        <li><a href="../assets/data.html">Data</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="row main-content">
+            <div class="col-sm-8 card-column" "col-md-8 card-column" "col-lg-8 card-column">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="header">
+                            Cloudiness
+                        </h2>
+                        <div class="row">
+                            <div class="col-xs-12" "col-sm-12" "col-md-12" "col-lg-12">
+                                <img src="../Resources/assets/images/cloudiness.png" class="pull-left img-responsive img-rounded detail-image">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12" "col-sm-12" "col-md-12" "col-lg-12">
+                                <p>
+                                    The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish
+                                    this analysis, first we pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                                </p>
+                                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. lattitude.  Factors
+                                    we looked at included: temperature, cloudiness, windspeed, and humidity.  This site provides the source data
+                                    and visualizations created as part of the analysis, as well as the explanations and descriptions of any trends
+                                    and correlations witnessed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 card-column" "col-sm-4 card-column" "col-md-4 card-column" "col-lg-4 card-column">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="header">
+                            Visualizations
+                        </h2>
+                        <div class="row">
+                            <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                <img src="../Resources/assets/images/cloudiness.png" class="pull-left img-responsive img-rounded img-list active">
+                            </div>
+                            <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                <a href="../assets/humidity.html">
+                                    <img src="../Resources/assets/images/humidity.png" class="pull-left img-responsive img-rounded img-list">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                <a href="../assets/temperature.html">
+                                    <img src="../Resources/assets/images/temperature.png" class="pull-left img-responsive  img-rounded img-list">
+                                </a>
+                            </div>
+                            <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                <a href="../assets/windspeed.html">
+                                    <img src="../Resources/assets/images/windspeed.png" class="pull-left img-responsive img-rounded img-list">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

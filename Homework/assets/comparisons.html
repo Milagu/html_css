@@ -1,0 +1,90 @@
+<!Doctype html>
+<html lang="en-us">
+    <title>Bootstrap Visualization Dashboard</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A project to showcase Data Analytics work using CSS-based design.">
+        <!-- FIRST jquery added for dropdown-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">  </script>
+        <!-- THEN bootstrap added for dropdown -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="../Resources/assets/style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-responsive.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Bootstrap begins in a container (grid gets created)-->
+        <div class="container">
+           <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Logo and name of the project-->
+                        <a class="navbar-brand" href="#">Lattitude</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../assets/temperature.html">Max Temperature</li>
+                                    <li><a href="../assets/humidity.html">Humidity</li>
+                                    <li><a href="../assets/cloudiness.html">Cloudiness</li>
+                                    <li><a href="../assets/windspeed.html">Windspeed</li>
+                                    <li><a href="../assets/comparisons.html">Comparisons</li>
+                                    <li><a href="../assets/data.html">Data</li>
+                                </ul>
+                            </li>
+                            <li><a href="../assets/comparisons.html">Comparisons</a></li>
+                            <li><a href="../assets/data.html">Data</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="row main-content">
+                <div class="col-xs-12 card-column" "col-sm-12 card-column" "col-md-12 card-column" "col-lg-12 card-column">
+                    <div class="datacard">
+                        <div class="card-body">
+                            <h2 class="header" align="left">Comparison: Lattitude Vs. X</h2>
+                            <hr/>
+                            <p align="left">Click any plot to get an in-depth analysis.</p>
+                            <br/>
+                            <div class="row">
+                                <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                    <a href="../assets/cloudiness.html">
+                                        <img src="../Resources/assets/images/cloudiness.png" class="pull-left img-responsive img-list">
+                                    </a>
+                                </div>
+                                <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                    <a href="../assets/humidity.html">
+                                        <img src="../Resources/assets/images/humidity.png" class="pull-left img-responsive img-list">
+                                    </a>
+                                </div>
+                                <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                    <a href="../assets/temperature.html">
+                                        <img src="../Resources/assets/images/temperature.png" class="pull-left img-responsive img-list">
+                                    </a>
+                                </div>
+                                <div class="col-xs-6" "col-sm-6" "col-md-6" "col-lg-6">
+                                    <a href="../assets/windspeed.html">
+                                        <img src="../Resources/assets/images/windspeed.png" class="pull-left img-responsive img-list">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
